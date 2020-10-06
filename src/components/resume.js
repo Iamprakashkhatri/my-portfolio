@@ -4,6 +4,9 @@ import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
 
+import profile from './img/profile.jpg';
+import profile1 from './img/profile1.jpg';
+
 
 class Resume extends Component {
   render() {
@@ -13,13 +16,13 @@ class Resume extends Component {
           <Cell col={4}>
             <div style={{textAlign: 'center'}}>
               <img
-                src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
+                src={profile}
                 alt="avatar"
-                style={{height: '200px'}}
+                style={{height: '200px',width:'200px',marginTop:'5px',marginLeft:'-100px',borderRadius:'50%'}}
                  />
             </div>
 
-            <h2 style={{paddingTop: '2em'}}>Paul Hanna</h2>
+            <h2 style={{paddingTop: '2em'}}>Prakash Khatri</h2>
             <h4 style={{color: 'grey'}}>Programmer</h4>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
