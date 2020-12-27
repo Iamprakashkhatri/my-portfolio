@@ -17,7 +17,7 @@ class Contact extends Component {
 
               style={{height: '250px',width:'250px', borderRadius:'50%'}}
                />
-             <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+             <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}>I am enthusiastic django python web developer working in smart tech solution since 2019</p>
 
           </Cell>
           <Cell col={6}>
@@ -42,12 +42,13 @@ class Contact extends Component {
                   </ListItemContent>
                 </ListItem>
 
-                <ListItem>
+                {/*<ListItem>
                   <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>
                     <i className="fa fa-skype" aria-hidden="true"/>
                     MySkypeID
                   </ListItemContent>
                 </ListItem>
+              */}
 
 
               </List>

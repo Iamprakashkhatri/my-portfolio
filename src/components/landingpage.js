@@ -18,11 +18,11 @@ class Landing extends Component {
               />
 
             <div className="banner-text">
-              <h1>Full Stack Web Developer</h1>
+              <h1>Python Django Web Developer</h1>
 
             <hr/>
 
-          <p>HTML/CSS | JavaScript | React | Django | Postgresql</p>
+          <p>HTML/CSS | JavaScript | React | Django | Python | Postgresql</p>
 
         <div className="social-links">
 
@@ -36,15 +36,16 @@ class Landing extends Component {
             <i className="fa fa-github-square" aria-hidden="true" />
           </a>
 
-          {/* Freecodecamp */}
+          {/* Freecodecamp 
           <a href="http://google.com" rel="noopener noreferrer" target="_blank">
             <i className="fa fa-free-code-camp" aria-hidden="true" />
           </a>
 
-          {/* Youtube */}
           <a href="http://google.com" rel="noopener noreferrer" target="_blank">
             <i className="fa fa-youtube-square" aria-hidden="true" />
           </a>
+
+          */}
 
         </div>
             </div>
