@@ -45,6 +45,12 @@ gitBtnClickJs2() {
 liveBtnClickJs2(){
   window.open("https://iamprakashkhatri.github.io/js-dice-game/")
 }
+gitBtnClickJs3(){
+  window.open("https://github.com/Iamprakashkhatri/omnifood")
+}
+liveBtnClickJs3(){
+  window.open("https://iamprakashkhatri.github.io/omnifood/")
+}
 
   toggleCategories() {
 
@@ -178,13 +184,13 @@ liveBtnClickJs2(){
         <div className="projects-grid">
     {/* Project 1 */}
     <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-      <CardTitle style={{color: '#000', height: '176px', background: 'url(https://cdn.worldvectorlogo.com/logos/css3.svg) center / cover'}} >React Project #1</CardTitle>
+      <CardTitle style={{color: '#000', height: '176px', background: 'url(https://cdn.worldvectorlogo.com/logos/css3.svg) center / cover'}} >Html/CSS Project #1</CardTitle>
       <CardText>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        This is simple project for omnifood which is made up of only by using html and css.
       </CardText>
       <CardActions border>
-        <Button colored>GitHub</Button>
-        <Button colored>Live Demo</Button>
+        <Button colored onClick = {this.gitBtnClickJs3.bind(this)}>GitHub</Button>
+        <Button colored onClick = {this.liveBtnClickJs3.bind(this)}>Live Demo</Button>
       </CardActions>
       <CardMenu style={{color: '#fff'}}>
         <IconButton name="share" />
