@@ -19,9 +19,15 @@ class Projects extends Component {
     window.open("http://13.233.121.131/login/")
   }
 
+
   gitBtnClickDjango3(){
-    window.open("https://gitlab.com/iamprakashkhatri/cms")
+    window.open("https://gitlab.com/padkhu/sms")
   }
+
+  liveBtnClickDjango4(){
+    window.open("https://ultraestore.com/")
+  }
+
 
   gitBtnClickReact1() {
     window.open("https://github.com/Iamprakashkhatri/crwn-clothing")
@@ -140,6 +146,22 @@ liveBtnClickJs3(){
               <IconButton name="share" />
             </CardMenu>
           </Card>
+
+        {/* Project 4 */}
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://hackernoon.com/drafts/ap4924y2.png) center / cover'}} >Django Project #2</CardTitle>
+            <CardText>
+              The name of this UltraGroup Ecommerce. This project is created basically for the sell of electronic equipment like bulb, chimney, washing machine,fridge etc. I have done backend of this project.
+            </CardText>
+            <CardActions border>
+              {/* <Button colored>GitHub</Button> */}
+              <Button colored onClick = {this.liveBtnClickDjango4.bind(this)}>Live Demo</Button>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
         </div>
         // <div><h1>This is Angular</h1></div>
       )

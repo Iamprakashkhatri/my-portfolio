@@ -17,7 +17,7 @@ class Contact extends Component {
 
               style={{height: '250px',width:'250px', borderRadius:'50%'}}
                />
-             <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}>I am enthusiastic django python web developer working in smart tech solution since 2019</p>
+             <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}>I am enthusiastic django python web developer working since 2019</p>
 
           </Cell>
           <Cell col={6}>

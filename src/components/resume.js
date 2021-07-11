@@ -25,7 +25,7 @@ class Resume extends Component {
             <h2 style={{paddingTop: '2em'}}>Prakash Khatri</h2>
             <h4 style={{color: 'grey'}}>Programmer</h4>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-            <p>I am Prakash Khatri. I am working as programmer in Smart Tech Solution since 2019. I have completed my bachelor in Bsc.csit from Samriddhi College in the year 2019.</p>
+            <p>I am Prakash Khatri. I had worked as python programmer in Smart Tech Solution since 2019-2020. Now I am working as django backend developer in Quantum It Solution Pvt since 2021. I have completed my bachelor in Bsc.csit from Samriddhi College in the year 2019.</p>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
             <h5>Address</h5>
             <p>Jagati, Bhaktapur</p>
@@ -62,18 +62,19 @@ class Resume extends Component {
 
             <Experience
               startYear={2019}
-              
+              endYear={2020}
               jobName="Django Web Developer"
-              jobDescription="I am working as django software developer in smart tech solution since 2019."
+              jobDescription="I had worked as django software developer in smart tech solution since 2019-2020."
               />
 
-              {/* <Experience
-                startYear={2012}
-                endYear={2016}
-                jobName="Second Job"
-                jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+              { <Experience
+                startYear={2021}
+                endYear={'NOW'}
+              
+                jobName="Django Backend Developer"
+                jobDescription="I am working as django backend developer in Quantum IT Solution PVT. since 2021."
                 />
-              */}
+              }
               <hr style={{borderTop: '3px solid #e22947'}} />
               <h2>Skills</h2>
               <Skills
