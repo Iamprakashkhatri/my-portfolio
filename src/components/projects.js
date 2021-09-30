@@ -24,10 +24,17 @@ class Projects extends Component {
     window.open("https://gitlab.com/padkhu/sms")
   }
 
-  liveBtnClickDjango4(){
+  liveBtnClickDRF1(){
     window.open("https://ultraestore.com/")
   }
 
+  liveBtnClickDRF2(){
+    window.open("https://test.ebidhya.com/")
+  }
+
+  liveBtnClickDRF3(){
+    window.open("https://api.dizhunk.com/dizhunk-admin/")
+  }
 
   gitBtnClickReact1() {
     window.open("https://github.com/Iamprakashkhatri/crwn-clothing")
@@ -37,6 +44,9 @@ class Projects extends Component {
   }
   gitBtnClickReact2(){
     window.open("https://github.com/Iamprakashkhatri/DjangoReact")
+  }
+  gitBtnClickReact3(){
+    window.open("https://github.com/Iamprakashkhatri/ultrafrontend")
   }
 
   gitBtnClickJs() {
@@ -60,7 +70,110 @@ liveBtnClickJs3(){
 
   toggleCategories() {
 
-    if(this.state.activeTab === 1){
+    if(this.state.activeTab === 0) {
+      return (
+           <div className="projects-grid">
+          {/* Project 1 */}
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1400/1*1OBwwxzJksMv0YDD-XmyBw.png) center / cover'}} >Django Project #1</CardTitle>
+            <CardText>
+              The name of the project is client portal. The system provides the  tool for the communication between admin,client and the members.
+            </CardText>
+            <CardActions border>
+              {/* <Button colored onClick = {this.gitBtnClickDjango1.bind(this)}>GitHub</Button> */}
+              <Button colored onClick = {this.liveBtnClickDjango1.bind(this)}>Live Demo</Button>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+          {/* Project 2 */}
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1400/1*1OBwwxzJksMv0YDD-XmyBw.png) center / cover'}} >Django Project #2</CardTitle>
+            <CardText>
+              The name of this project is staff record system which record the staff of an organization according to departments.
+            </CardText>
+            <CardActions border>
+              {/* <Button colored>GitHub</Button> */}
+              <Button colored onClick = { this.liveBtnClickDjango2.bind(this)}>Live Demo</Button>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+          {/* Project 3 */}
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1400/1*1OBwwxzJksMv0YDD-XmyBw.png) center / cover'}} >Django Project #3</CardTitle>
+            <CardText>
+              The name of this project is College digitalization system. In this system teachers can post assignments,take attendence and can post marksheet whereas students can download assignments,notes and view the marksheet and result.
+            </CardText>
+            <CardActions border>
+              <Button colored onClick = {this.gitBtnClickDjango3.bind(this)}>GitHub</Button>
+              {/* <Button colored>Live Demo</Button> */}
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+        </div>
+        // <div><h1>This is Angular</h1></div>
+      )
+
+      } else if(this.state.activeTab === 1) {
+      return (
+              <div className="projects-grid">
+          {/* Project 1 */}
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#000', height: '176px', background: 'url(https://miro.medium.com/max/1000/1*hRrsnPfpb5qbnCqc5uYrOA.png) center / cover'}} >Django Project #1</CardTitle>
+            <CardText>
+              The name of this project is  UltraGroup Ecommerce.It is e-commerce project for single vendor. This project is created basically for the sell of electronic equipment like bulb, chimney, washing machine,fridge etc.
+            </CardText>
+            <CardActions border>
+              {/* <Button colored onClick = {this.gitBtnClickDjango1.bind(this)}>GitHub</Button> */}
+              <Button colored onClick = {this.liveBtnClickDRF1.bind(this)}>Live Demo</Button>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+          {/* Project 2 */}
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#000', height: '176px', background: 'url(https://miro.medium.com/max/1000/1*hRrsnPfpb5qbnCqc5uYrOA.png) center / cover'}} >Django Project #2</CardTitle>
+            <CardText>
+              The name of this project is Evidhya which is e-learning platform where students can buy any of the courses for certain duration. The instructors after verification from admin can add their courses.
+            </CardText>
+            <CardActions border>
+              {/* <Button colored>GitHub</Button> */}
+              <Button colored onClick = { this.liveBtnClickDRF2.bind(this)}>Live Demo</Button>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+          {/* Project 3 */}
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#000', height: '176px', background: 'url(https://miro.medium.com/max/1000/1*hRrsnPfpb5qbnCqc5uYrOA.png) center / cover'}} >Django Project #3</CardTitle>
+            <CardText>
+              The name of this project is dizhunk which is also e-learning platform where students after buying any courses can have lifetime subscription.
+            </CardText>
+            <CardActions border>
+              <Button colored onClick = {this.liveBtnClickDRF3.bind(this)}>Live Demo</Button>
+              {/* <Button colored>Live Demo</Button> */}
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+        </div>
+        // <div><h1>This is Angular</h1></div>
+      )
+
+    } else if(this.state.activeTab === 2){
       return(
         <div className="projects-grid">
           {/* Project 1 */}
@@ -82,7 +195,7 @@ liveBtnClickJs3(){
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://www.svgrepo.com/show/303500/react-1-logo.svg) center / cover'}} >React Project #2</CardTitle>
             <CardText>
-              This is simple project that contains implementation of redux for signup and login of user. Similarly after the user logs into the system he/she can perform curd of articles in the project.
+              This is simple project which contains signup and login of user. Similarly after the user logs into the system he/she can perform curd of articles in the project.
               The data are abstracted through django rest api.
             </CardText>
             <CardActions border onClick = {this.gitBtnClickReact2.bind(this)}>
@@ -93,79 +206,25 @@ liveBtnClickJs3(){
               <IconButton name="share" />
             </CardMenu>
           </Card>
-
-          
-        </div>
-
-
-      )
-    } else if(this.state.activeTab === 0) {
-      return (
-              <div className="projects-grid">
-          {/* Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://hackernoon.com/drafts/ap4924y2.png) center / cover'}} >Django Project #1</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://www.svgrepo.com/show/303500/react-1-logo.svg) center / cover'}} >React Project #2</CardTitle>
             <CardText>
-              The name of the project is client portal. The system provides the  tool for the communication between admin,client and the members.
+              This is e-commerce project which is known is Ultragroup. Users can buy products through COD.
+              The data are abstracted through django rest api.
             </CardText>
-            <CardActions border>
-              {/* <Button colored onClick = {this.gitBtnClickDjango1.bind(this)}>GitHub</Button> */}
-              <Button colored onClick = {this.liveBtnClickDjango1.bind(this)}>Live Demo</Button>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-
-          {/* Project 2 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://hackernoon.com/drafts/ap4924y2.png) center / cover'}} >Django Project #2</CardTitle>
-            <CardText>
-              The name of this project is staff record system which record the staff of an organization according to departments.
-            </CardText>
-            <CardActions border>
-              {/* <Button colored>GitHub</Button> */}
-              <Button colored onClick = { this.liveBtnClickDjango2.bind(this)}>Live Demo</Button>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-
-          {/* Project 3 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://hackernoon.com/drafts/ap4924y2.png) center / cover'}} >Django Project #3</CardTitle>
-            <CardText>
-              The name of this project is College digitalization system. In this system teachers can post assignments,take attendence and can post marksheet whereas students can download assignments,notes and view the marksheet and result.
-            </CardText>
-            <CardActions border>
-              <Button colored onClick = {this.gitBtnClickDjango3.bind(this)}>GitHub</Button>
+            <CardActions border onClick = {this.gitBtnClickReact3.bind(this)}>
+              <Button colored>GitHub</Button>
               {/* <Button colored>Live Demo</Button> */}
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
             </CardMenu>
           </Card>
-
-        {/* Project 4 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://hackernoon.com/drafts/ap4924y2.png) center / cover'}} >Django Project #2</CardTitle>
-            <CardText>
-              The name of this UltraGroup Ecommerce. This project is created basically for the sell of electronic equipment like bulb, chimney, washing machine,fridge etc. I have done backend of this project.
-            </CardText>
-            <CardActions border>
-              {/* <Button colored>GitHub</Button> */}
-              <Button colored onClick = {this.liveBtnClickDjango4.bind(this)}>Live Demo</Button>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-
         </div>
         // <div><h1>This is Angular</h1></div>
       )
-    } else if(this.state.activeTab === 2) {
+
+    } else if(this.state.activeTab === 3) {
       return (
         <div className="projects-grid">
     {/* Project 1 */}
@@ -200,8 +259,8 @@ liveBtnClickJs3(){
     </Card>
   </div>
   // <div><h1>This is Angular</h1></div>
-)
-    } else if(this.state.activeTab === 3) {
+  )
+    } else if(this.state.activeTab === 4) {
       return (
         <div className="projects-grid">
     {/* Project 1 */}
@@ -232,6 +291,7 @@ liveBtnClickJs3(){
       <div>
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
           <Tab>Django</Tab>
+          <Tab>DRF</Tab>
           <Tab>React</Tab>
           <Tab>JS</Tab>
           <Tab>HTML/CSS</Tab>

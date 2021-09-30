@@ -18,7 +18,7 @@ class Landing extends Component {
               />
 
             <div className="banner-text">
-              <h1>Python Django Web Developer</h1>
+              <h1>Software Engineer</h1>
 
             <hr/>
 
